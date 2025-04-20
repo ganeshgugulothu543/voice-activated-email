@@ -1,0 +1,102 @@
+.voice-email-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.voice-email-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.voice-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.mic-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mic-button:hover {
+  background-color: #0056b3;
+}
+
+.mic-button.listening {
+  background-color: #dc3545;
+  animation: pulse 1.5s infinite;
+}
+
+.mic-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.transcript-box,
+.status-box {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.transcript-box h3,
+.status-box h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.transcript-box p {
+  color: #666;
+  font-size: 14px;
+}
+
+.status-box p {
+  color: #28a745;
+  text-align: center;
+  font-weight: 500;
+}
+
+.instructions {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.instructions h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.instructions p {
+  color: #666;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
